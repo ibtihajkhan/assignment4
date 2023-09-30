@@ -1,0 +1,23 @@
+//Q.6: implement a function that checks if a given string is a palindrome.
+// input : "radsr"
+// output : "radar" is a palindrome
+
+bool isPalindrome(String str) {
+  // Convert the string to lowercase and remove spaces
+  String cleanStr = str.toLowerCase().replaceAll(' ', '');
+  
+  // Check if the cleaned string is a palindrome
+  for (int i = 0; i < cleanStr.length ~/ 2; i++) {
+    if (cleanStr[i] != cleanStr[cleanStr.length - 1 - i]) {
+      return false;
+    }
+  }
+  return true;
+}
+
+void main() {
+  String input = "radar";
+  bool isPal = isPalindrome(input);
+  
+  print('$input is ${isPal ? '' : 'not '}a palindrome.');
+}

@@ -1,0 +1,15 @@
+//Q.5: Write a program that prints the multiplication table of a given number using a for loop.
+// input : 5
+// output : 5*1=5 , 5*2=10 , 5*3=15 , 5*10=50
+
+
+void printMultiplicationTable(int number) {
+  for (int i = 1; i <= 10; i++) {
+    print('$number * $i = ${number * i}');
+  }
+}
+
+void main() {
+  int inputNumber = 5;
+  printMultiplicationTable(inputNumber);
+}

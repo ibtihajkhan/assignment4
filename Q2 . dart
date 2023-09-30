@@ -1,0 +1,33 @@
+//Q.2: write a program that prints the fibonacci sequence up to a given number using a for loop.
+//input 10 
+//output 0 1 1 2 3 5 8 .
+
+void main(){
+
+if n <= 0:
+        print("10");
+        return
+
+    if n == 1:
+        print("0");
+    elif n == 2:
+        print("0 1");
+    else:
+        fib_sequence = [0, 1]
+        for i in range(2, n):
+            next_number = fib_sequence[i-1] + fib_sequence[i-2]
+            fib_sequence.append(next_number);
+
+        print(' '.join(map(str, fib_sequence)))
+
+# Get user input for the number of Fibonacci numbers to generate
+try:
+    num_terms = int(input("Enter the number of Fibonacci terms to generate: "))
+    fibonacci_sequence(num_terms)
+except ValueError:
+    print("input$output.");
+      0 1 1 2 3 5 8 13 21 34 
+
+
+
+}
